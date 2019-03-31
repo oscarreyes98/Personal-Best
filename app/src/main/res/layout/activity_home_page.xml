@@ -1,0 +1,141 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- Use DrawerLayout as root container for activity -->
+<android.support.v4.widget.DrawerLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/drawer_layout"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:fitsSystemWindows="true">
+
+    <!-- Layout to contain contents of main body of screen (drawer will slide over this) -->
+    <FrameLayout
+        android:id="@+id/content_frame"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <android.support.v7.widget.Toolbar
+            android:id="@+id/toolbar"
+            android:layout_width="match_parent"
+            android:layout_height="?attr/actionBarSize"
+            android:background="?attr/colorPrimary"
+            android:theme="@style/ThemeOverlay.AppCompat.ActionBar" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+
+            <TextView
+                android:id="@+id/user_id"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="No User"
+                android:textSize="10sp"
+                android:layout_gravity="center_horizontal"
+                android:layout_marginTop="60dp"/>
+
+            <Button
+                android:id="@+id/custom_goal"
+                android:layout_gravity="center_horizontal"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Change Goal"
+                android:layout_marginTop="20dp"
+                android:layout_marginLeft="110dp"
+                android:paddingLeft="10sp"
+                android:paddingRight="10sp"/>
+            <TextView
+                android:id="@+id/step_goal"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Goal: 5000 steps"
+                android:textSize="30sp"
+                android:layout_gravity="center_horizontal"
+                android:layout_marginTop="10dp"/>
+
+            <TextView
+                android:id="@+id/step_total"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal"
+                android:layout_marginTop="50sp"
+                android:text="0"
+                android:textSize="30sp"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/dist_total"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal"
+                android:layout_marginTop="10dp"
+                android:text="(0 miles)"
+                android:textSize="30sp"
+                android:textStyle="bold" />
+
+            <Button
+                android:id="@+id/btn_walk_start"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_marginTop="50dp"
+                android:background="#00cc00"
+                android:paddingLeft="10sp"
+                android:paddingRight="10sp"
+                android:text="@string/walk_start" />
+
+
+            <LinearLayout
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_width="wrap_content"
+                android:gravity="center_horizontal"
+                android:orientation="horizontal"
+                android:layout_marginTop="50dp">
+
+                <android.support.design.widget.FloatingActionButton
+                    android:id="@+id/fab_add_steps"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="end|bottom"
+                    android:layout_weight="0"
+                    android:backgroundTint="#00cc00"
+                    android:layout_margin="16dp" />
+
+                <android.support.design.widget.FloatingActionButton
+                    android:id="@+id/fab_change_time"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="start|bottom"
+                    android:backgroundTint="#0000cc"
+                    android:layout_weight="0"
+                    android:layout_margin="16dp" />
+
+                <Button
+                    android:id="@+id/clear"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Clear Shared Preferences"
+                    android:visibility="visible"/>
+
+            </LinearLayout>
+
+        </LinearLayout>
+
+    </FrameLayout>
+
+    <!-- Container for contents of drawer - use NavigationView to make configuration easier -->
+    <android.support.design.widget.NavigationView
+        android:id="@+id/nav_view"
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent"
+        android:layout_gravity="start"
+        android:fitsSystemWindows="true"
+        app:menu="@menu/drawer_menu"/>
+
+</android.support.v4.widget.DrawerLayout>
+
+
+
+

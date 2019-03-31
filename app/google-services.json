@@ -1,0 +1,63 @@
+{
+  "project_info": {
+    "project_number": "447139225557",
+    "firebase_url": "https://team8-personalbest.firebaseio.com",
+    "project_id": "team8-personalbest",
+    "storage_bucket": "team8-personalbest.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:447139225557:android:564391c38699382f",
+        "android_client_info": {
+          "package_name": "edu.personalbest.ucsd.personalbest"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "447139225557-12qq7f15foqu4d345uup7krkn7uo1g8n.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "edu.personalbest.ucsd.personalbest",
+            "certificate_hash": "d8f49a470cf790c1376bca00cd5016d09884eb17"
+          }
+        },
+        {
+          "client_id": "447139225557-ejmhkh6ekap1ldvfegtot7pvvuc71v71.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "edu.personalbest.ucsd.personalbest",
+            "certificate_hash": "3ea7400d81b58a270f39efe56c58d27b7b5e18ce"
+          }
+        },
+        {
+          "client_id": "447139225557-vsbe4cvre11ct16glp4ch31v493bmlm0.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCeyqBg-UnZVPj4qc5PiWHwbTC5aKBWtkI"
+        }
+      ],
+      "services": {
+        "analytics_service": {
+          "status": 1
+        },
+        "appinvite_service": {
+          "status": 2,
+          "other_platform_oauth_client": [
+            {
+              "client_id": "447139225557-vsbe4cvre11ct16glp4ch31v493bmlm0.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        },
+        "ads_service": {
+          "status": 2
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

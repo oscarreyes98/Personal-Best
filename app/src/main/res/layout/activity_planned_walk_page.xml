@@ -1,0 +1,169 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".PlannedWalkPage" >
+
+    <LinearLayout
+        android:layout_height="wrap_content"
+        android:layout_width="fill_parent"
+        android:orientation="horizontal">
+
+        <TextView
+            android:text="Elapsed time: "
+            android:layout_height="wrap_content"
+            android:layout_width="wrap_content"
+            android:layout_weight="1"
+            android:layout_gravity="start"
+            android:textSize="20sp"/>
+
+        <TextView
+            android:id="@+id/time_display"
+            android:text="00:00:00"
+            android:layout_height="wrap_content"
+            android:layout_width="wrap_content"
+            android:layout_weight="1"
+            android:textSize="20sp"
+            android:gravity="end"
+            android:paddingRight="5sp"
+            android:layout_gravity="end"/>
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_height="wrap_content"
+        android:layout_width="fill_parent"
+        android:orientation="horizontal"
+        android:layout_marginTop="30dp">
+
+        <TextView
+            android:text="Steps on walk:"
+            android:layout_height="wrap_content"
+            android:layout_width="wrap_content"
+            android:layout_weight="1"
+            android:layout_gravity="start"
+            android:textSize="20sp"/>
+
+        <TextView
+            android:id="@+id/walk_step_display"
+            android:text="0"
+            android:layout_height="wrap_content"
+            android:layout_width="wrap_content"
+            android:layout_weight="1"
+            android:textSize="20sp"
+            android:gravity="end"
+            android:paddingRight="5sp"
+            android:layout_gravity="end"/>
+
+    </LinearLayout>
+
+    <TextView
+        android:id="@+id/walk_dist_display"
+        android:text="(0 miles)"
+        android:layout_height="wrap_content"
+        android:layout_width="wrap_content"
+        android:layout_weight="1"
+        android:textSize="20sp"
+        android:gravity="end"
+        android:layout_gravity="end"/>
+
+    <LinearLayout
+        android:layout_height="wrap_content"
+        android:layout_width="fill_parent"
+        android:orientation="horizontal"
+        android:layout_marginTop="30dp">
+
+        <TextView
+            android:text="Average Speed"
+            android:layout_height="wrap_content"
+            android:layout_width="wrap_content"
+            android:layout_weight="1"
+            android:layout_gravity="start"
+            android:textSize="20sp"/>
+
+        <TextView
+            android:id="@+id/walk_speed_display"
+            android:text="0 MPH"
+            android:layout_height="wrap_content"
+            android:layout_width="wrap_content"
+            android:layout_weight="1"
+            android:textSize="20sp"
+            android:gravity="right"
+            android:layout_gravity="end"/>
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_height="wrap_content"
+        android:layout_width="fill_parent"
+        android:orientation="horizontal"
+        android:layout_marginTop="30dp">
+
+        <TextView
+            android:text="Steps today:"
+            android:layout_height="wrap_content"
+            android:layout_width="wrap_content"
+            android:layout_weight="1"
+            android:layout_gravity="start"
+            android:textSize="20sp"/>
+
+        <TextView
+            android:id="@+id/total_step_display"
+            android:text="0"
+            android:paddingRight="5sp"
+            android:layout_height="wrap_content"
+            android:layout_width="wrap_content"
+            android:layout_weight="1"
+            android:textSize="20sp"
+            android:gravity="end"
+            android:layout_gravity="end"/>
+
+    </LinearLayout>
+
+    <TextView
+        android:id="@+id/total_dist_display"
+        android:text="(0 miles)"
+        android:layout_height="wrap_content"
+        android:layout_width="wrap_content"
+        android:layout_weight="1"
+        android:textSize="20sp"
+        android:gravity="end"
+        android:layout_gravity="end"/>
+
+    <Button
+        android:id="@+id/btn_walk_end"
+        android:layout_gravity="center"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/walk_end"
+        android:background="#ff0000"
+        android:paddingRight="10sp"
+        android:paddingLeft="10sp"
+        android:layout_marginBottom="50dp"/>
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content">
+
+        <android.support.design.widget.FloatingActionButton
+            android:id="@+id/fab_add_steps"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="end|bottom"
+            android:layout_weight="0"
+            android:backgroundTint="#00cc00"
+            android:layout_margin="16dp" />
+
+        <android.support.design.widget.FloatingActionButton
+            android:id="@+id/fab_change_time"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="start|bottom"
+            android:backgroundTint="#0000cc"
+            android:layout_weight="0"
+            android:layout_margin="16dp" />
+    </LinearLayout>
+
+
+</LinearLayout>

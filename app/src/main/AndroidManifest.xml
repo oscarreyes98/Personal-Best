@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="edu.personalbest.ucsd.personalbest">
+
+    <application
+        android:allowBackup="true"
+        android:icon="@mipmap/ic_launcher_foreground"
+        android:label="@string/app_name"
+        android:roundIcon="@mipmap/ic_steps_round"
+        android:supportsRtl="true"
+        android:theme="@style/Theme.AppCompat.Light.NoActionBar">
+        <service android:name=".FirebaseMessagingServiceAdapter">
+            <intent-filter>
+                <action android:name="com.google.firebase.MESSAGING_EVENT" />
+            </intent-filter>
+        </service>
+        <activity android:name=".FriendGraph"></activity>
+        <activity
+            android:name=".FriendChat"
+            android:label="@string/title_activity_friend_chat" />
+        <activity
+            android:name=".FriendsList"
+            android:label="@string/title_activity_friends_list"
+            android:theme="@style/NoActionBar" />
+        <activity android:name=".Height" />
+        <activity android:name=".HomePage">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity android:name=".PlannedWalkPage"></activity>
+        <activity android:name=".UserHistoryGraphPage"></activity>
+
+        <meta-data
+            android:name="com.google.android.geo.API_KEY"
+            android:value="447139225557-12qq7f15foqu4d345uup7krkn7uo1g8n.apps.googleusercontent.com" />
+        <meta-data
+            android:name="com.google.android.gms.version"
+            android:value="@integer/google_play_services_version" />
+    </application>
+
+</manifest>

@@ -1,0 +1,9 @@
+<resources>
+    <string name="app_name">PersonalBest</string>
+    <string name="walk_start">Start Walk/Run Now</string>
+    <string name="walk_end">End Walk/Run Now</string>
+    <string name="custom_goal">Change Goal</string>
+    <string name="height">Height</string>
+    <string name="title_activity_friends_list">FriendsList</string>
+    <string name="title_activity_friend_chat">FriendChat</string>
+</resources>
